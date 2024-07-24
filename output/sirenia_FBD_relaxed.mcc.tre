@@ -1,0 +1,54 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=43;
+	Taxlabels
+		Anomotherium_langewieschei
+		Bharatisiren_indica
+		Bharatisiren_kachchhensis
+		Callistosiren_boriquensis
+		Caribosiren_turneri
+		Cornwallius_sookensis_Desmo
+		Corystosiren_varguezi
+		Crenatosiren_olseni
+		Culebratherium_alemani
+		Dioplotherium_allisoni
+		Dioplotherium_manigaulti
+		Domningia_sodhae
+		Dugong_dugon
+		Dusisiren_jordani
+		Dusisiren_reinharti
+		Eosiren_libyca
+		Eotheriodes_aegyptiacum
+		Hydrodamalis_cuestae
+		Hydrodamalis_gigas
+		Kaupitherium_spp
+		Kutchisiren_cylindrica
+		Lentiarenium_cristolii
+		Metaxytherium_albifontanum
+		Metaxytherium_arctodites
+		Metaxytherium_floridanum
+		Metaxytherium_krahuletzi
+		Metaxytherium_serresii
+		Miosiren_kocki
+		Nanosiren_spp
+		Pezosiren_portelli
+		Potamosiren_madgalenensis
+		Priscosiren_atlantica
+		Proboscidea
+		Prorastomus_sirenoides
+		Protosiren_smithae
+		Prototherium_ausetanum
+		Ribodon_limbatus
+		Rytiodus_capgrandi
+		Rytiodus_heali
+		Sobrarbesiren_cardieli
+		Trichechus_hesperamazonicus
+		Trichechus_inunguis
+		Xenosiren_yucateca
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R](((((((((((((((((((((Trichechus_hesperamazonicus[&index=16]:1.260118,Trichechus_inunguis[&index=18]:1.260118)[&index=44,posterior=1.000000,age_95%_HPD={0.000505,3.91409}]:7.334113,Ribodon_limbatus[&index=19,age_95%_HPD={7.24622,10.6604}]:0.005976)[&index=45,posterior=1.000000,age_95%_HPD={7.24622,10.6781}]:4.183157,Potamosiren_madgalenensis[&index=26,age_95%_HPD={11.0002,15.6355}]:0.000001)[&index=46,posterior=0.930152,age_95%_HPD={11.0002,15.522}]:1.298026,Dusisiren_reinharti[&index=24,age_95%_HPD={11.8597,15.8789}]:0.260303)[&index=47,posterior=0.384697,age_95%_HPD={11.6281,16.3382}]:1.673597,((Hydrodamalis_cuestae[&index=13,age_95%_HPD={2.58826,8.35812}]:0.002549,Hydrodamalis_gigas[&index=17]:5.114284)[&index=48,posterior=1.000000,age_95%_HPD={2.58826,8.37422}]:4.320839,Dusisiren_jordani[&index=22,age_95%_HPD={6.45098,11.606}]:0.082805)[&index=49,posterior=1.000000,age_95%_HPD={5.9051,11.606}]:6.313889)[&index=50,posterior=0.995734,age_95%_HPD={12.715,19.0593}]:2.597731,Metaxytherium_arctodites[&index=12,age_95%_HPD={13.9474,15.9542}]:3.368570)[&index=51,posterior=0.459611,age_95%_HPD={14.9654,21.6762}]:1.925968,(Metaxytherium_floridanum[&index=23,age_95%_HPD={9.88015,12.4997}]:1.035311,Metaxytherium_serresii[&index=27,age_95%_HPD={5.42603,20.1071}]:1.093451)[&index=52,posterior=0.726473,age_95%_HPD={9.42851,18.0825}]:7.783174)[&index=53,posterior=0.941082,age_95%_HPD={16.4514,23.9476}]:3.698571,Metaxytherium_albifontanum[&index=11,age_95%_HPD={23.0307,25.8221}]:0.000001)[&index=54,posterior=0.810184,age_95%_HPD={23.0307,25.8033}]:0.945014,Metaxytherium_krahuletzi[&index=29,age_95%_HPD={14.8372,20.4389}]:6.311805)[&index=55,posterior=0.992002,age_95%_HPD={23.0723,27.1963}]:2.816147,(Crenatosiren_olseni[&index=5,age_95%_HPD={23.0344,29.673}]:0.000001,Nanosiren_spp[&index=28,age_95%_HPD={6.99968,20.429}]:10.113849)[&index=56,posterior=0.698480,age_95%_HPD={23.037,28.8824}]:2.053779)[&index=57,posterior=0.497467,age_95%_HPD={25.1731,30.3114}]:1.624637,(((((((Dioplotherium_manigaulti[&index=36,age_95%_HPD={13.8214,20.2254}]:0.000001,Xenosiren_yucateca[&index=21,age_95%_HPD={5.61911,10.2999}]:8.573838)[&index=58,posterior=0.860037,age_95%_HPD={13.8214,20.1732}]:5.018218,Domningia_sodhae[&index=34,age_95%_HPD={20.4407,22.8708}]:0.251786)[&index=59,posterior=0.629432,age_95%_HPD={20.4407,23.6987}]:1.591670,(Culebratherium_alemani[&index=31,age_95%_HPD={15.9705,20.8537}]:0.991144,Dioplotherium_allisoni[&index=25,age_95%_HPD={8.198,16.2984}]:5.676833)[&index=60,posterior=0.981072,age_95%_HPD={15.9705,22.2725}]:4.572130)[&index=61,posterior=0.194082,age_95%_HPD={21.1728,25.6146}]:0.770511,Kutchisiren_cylindrica[&index=35,age_95%_HPD={16.5933,23.0212}]:4.323407)[&index=62,posterior=0.256465,age_95%_HPD={21.5639,26.5592}]:1.141471,(((Corystosiren_varguezi[&index=14,age_95%_HPD={4.92256,5.33299}]:4.507511,Dugong_dugon[&index=15]:9.625749)[&index=63,posterior=0.536390,age_95%_HPD={5.79558,14.6023}]:5.751291,Rytiodus_heali[&index=20,age_95%_HPD={7.63252,11.6178}]:5.559308)[&index=64,posterior=0.463077,age_95%_HPD={9.50703,22.1475}]:7.840038,Rytiodus_capgrandi[&index=33,age_95%_HPD={20.4814,22.901}]:1.542759)[&index=65,posterior=0.241802,age_95%_HPD={20.543,25.4881}]:2.173100)[&index=66,posterior=0.167155,age_95%_HPD={23.2198,27.1029}]:0.845192,(Bharatisiren_indica[&index=9,age_95%_HPD={23.0302,24.9469}]:0.853730,Bharatisiren_kachchhensis[&index=32,age_95%_HPD={20.47,22.8852}]:2.937527)[&index=67,posterior=0.824314,age_95%_HPD={23.0361,26.1773}]:1.656040)[&index=68,posterior=0.587043,age_95%_HPD={24.7345,27.716}]:0.890469,Callistosiren_boriquensis[&index=37,age_95%_HPD={23.2612,28.0949}]:1.182702)[&index=69,posterior=0.878699,age_95%_HPD={25.2984,28.6641}]:2.231240)[&index=70,posterior=0.528126,age_95%_HPD={27.3079,31.7793}]:0.698211,(Caribosiren_turneri[&index=8,age_95%_HPD={23.0585,27.7792}]:1.529264,Priscosiren_atlantica[&index=10,age_95%_HPD={24.3283,28.0999}]:0.385846)[&index=71,posterior=0.813117,age_95%_HPD={24.2496,29.4475}]:3.084196)[&index=72,posterior=0.906692,age_95%_HPD={27.8071,32.4992}]:1.270307,Lentiarenium_cristolii[&index=7,age_95%_HPD={19.8356,28.099}]:5.792694)[&index=73,posterior=0.995734,age_95%_HPD={28.7429,34.0533}]:1.890904,Kaupitherium_spp[&index=3,age_95%_HPD={28.7536,33.8982}]:1.575256)[&index=74,posterior=0.588376,age_95%_HPD={30.6127,35.9456}]:1.400791,(Anomotherium_langewieschei[&index=4,age_95%_HPD={23.0344,31.6868}]:0.006461,Miosiren_kocki[&index=30,age_95%_HPD={16.3521,20.4397}]:8.151266)[&index=75,posterior=0.996001,age_95%_HPD={23.0344,31.7025}]:7.887864)[&index=76,posterior=0.996534,age_95%_HPD={31.5939,37.998}]:3.382248,Eosiren_libyca[&index=38,age_95%_HPD={34.6619,37.999}]:1.262236)[&index=77,posterior=0.991202,age_95%_HPD={34.5564,41.6131}]:4.004932,Prototherium_ausetanum[&index=2,age_95%_HPD={38.2827,41.2998}]:2.126243)[&index=78,posterior=0.491869,age_95%_HPD={38.9751,45.3957}]:1.737609,Eotheriodes_aegyptiacum[&index=40,age_95%_HPD={41.3002,46.3914}]:0.441329)[&index=79,posterior=0.905359,age_95%_HPD={41.3232,46.8882}]:2.594901,Protosiren_smithae[&index=42,age_95%_HPD={33.9186,46.0002}]:6.742385)[&index=80,posterior=0.847507,age_95%_HPD={41.8695,51.3156}]:2.848439,Sobrarbesiren_cardieli[&index=39,age_95%_HPD={42.4122,47.7997}]:3.579643)[&index=81,posterior=0.725673,age_95%_HPD={44.6441,54.6766}]:4.742698,(((Cornwallius_sookensis_Desmo[&index=6,age_95%_HPD={23.04,27.825}]:3.947619,Proboscidea[&index=43]:29.261540)[&index=82,posterior=1.000000,age_95%_HPD={24.5538,35.0805}]:14.549536,Prorastomus_sirenoides[&index=1,age_95%_HPD={41.301,46.9723}]:0.023460)[&index=83,posterior=1.000000,age_95%_HPD={41.3003,47.0275}]:4.519538,Pezosiren_portelli[&index=41,age_95%_HPD={41.3891,47.4921}]:3.769868)[&index=84,posterior=0.900560,age_95%_HPD={43.5819,53.7545}]:5.597507)[&index=85,posterior=1.000000,age_95%_HPD={48.5492,60.4932}]:0.000000;
+End;
