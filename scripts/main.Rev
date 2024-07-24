@@ -1,0 +1,38 @@
+# main script 
+
+# read in data
+taxa <- readTaxonData("data/sirenia_taxa.tsv")
+morpho <- readDiscreteCharacterData("data/sirenia_morphology.nex")
+
+# helper variables
+num_taxa <- morpho.ntaxa() # number of taxa
+num_branches <- 2 * num_taxa - 2 # number of branches in an *rooted* tree
+
+moves    = VectorMoves()
+monitors = VectorMonitors()
+
+# tree model
+source("scripts/FBD_dating.Rev")
+# clock model
+source("scripts/strict_clock_morpho.Rev")
+#source("scripts/relaxed_clock.Rev")
+# substitution models
+source("scripts/Mk.Rev")
+
+# set up the MCMC
+mymodel = model(tree)
+
+# define set of monitors to capture output
+# parameters printed to file
+monitors.append( mnModel(filename = "output/sirenia_FBD_strict.log", printgen = 100, exclude = ["F"]) )
+# trees printed to file
+monitors.append( mnFile(filename = "output/sirenia_FBD_strict.trees", printgen = 100, tree) )
+# parameter values printed to screen during the MCMC
+monitors.append( mnScreen(printgen = 100, age_extant, num_samp_anc, origin_time) )
+
+mymcmc = mcmc(mymodel, monitors, moves)
+mymcmc.run(generations = 500000, tuningInterval = 1000) #underPrior=TRUE
+
+
+trace = readTreeTrace("output/sirenia_FBD_strict.trees")
+mccTree(trace, file="output/sirenia_FBD_strict.mcc.tre", positiveBranchLengths=TRUE) 

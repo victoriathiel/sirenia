@@ -1,0 +1,9 @@
+# MK
+
+# Mk / JC model
+
+# define Q matrix for 7 states 
+Q <- fnJC(7)
+
+seq ~ dnPhyloCTMC(tree = tree, Q = Q, type = "Standard", branchRates = branch_rates)
+seq.clamp(morpho)
