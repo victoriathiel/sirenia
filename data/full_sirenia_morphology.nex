@@ -1,0 +1,1049 @@
+#NEXUS
+[written Fri Feb 19 20:40:58 COT 2021 by Mesquite  version 3.61 (build 927) at iMac/192.168.100.63]
+
+BEGIN TAXA;
+	TITLE WAC_sirenia;
+	DIMENSIONS NTAX=46;
+	TAXLABELS
+		Proboscidea 'Cornwallius sookensis_Desmo' Prorastomus_sirenoides Pezosiren_portelli Sobrarbesiren_cardieli Protosiren_smithae Eotheriodes_aegyptiacum Prototherium_ausetanum Eosiren_libyca Halitherium_taulannense Anomotherium_langewieschei Miosiren_kocki Potamosiren_madgalenensis Ribodon_limbatus Trichechus_hesperamazonicus Trichechus_manatus_latirostris Trichechus_senegalensis Trichechus_inunguis Kaupitherium_spp Lentiarenium_cristolii Priscosiren_atlantica Caribosiren_turneri Metaxytherium_krahuletzi Metaxytherium_albifontanum Metaxytherium_floridanum Metaxytherium_serresii Metaxytherium_arctodites Dusisiren_reinharti Dusisiren_jordani Hydrodamalis_cuestae Hydrodamalis_gigas Crenatosiren_olseni Nanosiren_spp Dugong_dugon Corystosiren_varguezi Callistosiren_boriquensis Kutchisiren_cylindrica Rytiodus_heali Rytiodus_capgrandi Bharatisiren_indica Bharatisiren_kachchhensis Domningia_sodhae Dioplotherium_manigaulti Xenosiren_yucateca Culebratherium_alemani Dioplotherium_allisoni 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=83;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6";
+	CHARSTATELABELS 
+		1 3._Rostrum /  Premaxillae_do_not_form_an_elongated_rostrum 'rostrum elongated but small relative to cranium (lenght of pmx symphysis smaller or equal to 0.27 x AB)' 'rostrum enlarged (length of pmx symphysis larger than 0.27 x AB)',
+		2 6._Nasal_process_of_Premaxilla /  'thin and tapering at posterior end, overlapping frontal and/or nasal (e.g. Eosiren, Halitherium) ' 'tapering but broadened at posterior end, with long overlap of frontal and/or nasal (e.g. Metaxytherium subapenninum)' 'tapering but thickened at posterior end, with long overlap of frontal and/or nasal (e.g. Bharatisiren kachchhensis)' 'broadened and bulbous at posterior end, having more or less vertical, transverse butt joint surface in contact with (mainly) frontal (e.g. Callistosiren, Domningia)' 'broadened and bulbous at posterior end, having more or less vertical, transverse butt joint surface in contact with (mainly) nasal (e.g. Rytiodus heali)' 'thin and tapering at posterior end, overlapping frontal, but laterally expanded just anterior to supraorbital process of frontal, curving around and closely appressed to its anteromedial side, and with a vertical butt joint against the comparably thick anterior tip of the frontal (e.g. Stegosiren)',
+		3 7._Nasal_process_of_Premaxilla /  'Long (distance from rear of smphysis to posterior end of premaxilla >1/2 length of symphysis)' Very_short,
+		4 8._External_nares /  not_retracted 'retracted and enlarged, reaching to or beyond the level of the anterior margin of orbit',
+		5 9._Premaxilla /  'short, does not contact frontal' 'long, contacts frontal' 'long, contact with frontal nearly lost, premaxilla abuts mainly against nasal instead',
+		6 10._Premaxillary_symphysis /  not_laterally_compressed_to_form_a_middorsal_ridge 'laterally compressed, bearing a middorsal ridge anteriorly with its posterior end upraised to form a boss in lateral view' 'laterally compressed but without a boss, posterior end being dorsally flattened instead',
+		7 '11. Zygomatic-orbital bridge of maxilla' /  nearly_level_with_palate 'elevated above palate, with its ventral surface lying >1 cm above the alveolar margin',
+		8 13._Infraorbital_foramen /  'small (diameter about 15 x 10 mm or less)' 'large (diameters greater than 15 x 10 mm, but less than 30 mm)' 'very large (both diameters greater than 30 mm)' 'polymorphic, 0&1 present',
+		9 '14. Zygomatic-orbital bridge of Maxilla' /  'long anteroposteriorly (vertical thickness < 0.40 x minimum length)' 'shortened (thickness greater than or equal to 0.40 x length)' shortened_and_transformed_into_a_transverse_vertical_wall,
+		10 16._Palate /  thin_or_incomplete_at_level_of_penultimate_cheek_tooth '> 1 cm thick at level of penultimate tooth',
+		11 20._Infraorbital_canal /  not_obstructed partly_obstructed_by_a_transverse_bony_ridge,
+		12 21._Paranasal_air_sinuses /  'present (in any facial bones)' absent,
+		13 '22. Zygomatic-orbital bridge of maxilla' /  'anterior edge thin and sharp, posterior edge thick and more or less rounded' both_edges_thin_and_sharp both_edges_thick_&_rounded 'polymorphic, 0&1 present',
+		14 '23. Anterior palate (=palatal gutter; fwd of IO foramen)' /  'very narrow relative to posterior palate including teeth and (especially) to rostral masticating surface' almost_as_wide_as_posterior_palata_and_rostral_masticating_surface,
+		15 31._Nasals /  meet_in_midline 'separated in midline by frontals and/or an incisure or separated and fused with frontals',
+		16 36._Supraorbital_process_of_frontal /  'well developed, dorsoventrally thin overall (< 2 cm thick) with prominent, dorsoventrally flattened posterolateral corner' 'dorsoventrally thickened, with posterolateral corner only moderately or weakly developed' 'reduced, rounded, lacking posterolateral corner' 'dorsoventrally thickened (>2cm), with dorsal surface inclined strongly ventrolaterad and with posterolateral corner strongly developed and more or less recurved',
+		17 37._Nasal_incisure_at_posterior_end_of_mesorostral_fossa /  'absent or small (does not extend posterior to supraorbital process)' 'deep and narrow (extends posterior to supraorbital process)' 'comparably deep but broad, with the anterior margin displaying a median convexity',
+		18 42._Frontal_roof /  'convex, more or less flat, or moderately concave between temporal crest (if present)' 'deeply concave or depressed overal (with or without a small median convexity) between temporal crests, but not sloping ventrad anteriorly' 'deeply concave or depressed, and sloping steadily ventrad to anterior margin',
+		19 44._Supraorbital_process_of_frontal /  not_divided 'divided by one or more distinct, deep dorsoventral grooves indenting its lateral margin',
+		20 45._Frontal_roof /  bear_no_knoblike_bosses 'bears bilateral pair of knoblike bosses, more or less cylindrical in shape and directed anterad; or at least a distinct longitudinal ridge or swelling medial and parallel to, and distinct from, each temporal crest',
+		21 51._Sagittal_Crest /  present absent,
+		22 64._Supraoccipital /  wider_in_dorsal_half_than_at_ventral_extremities_of_lateral_borders 'wider ventrally than dorsally, or equally wide throughout',
+		23 66._Exoccipitals /  meet_in_a_suture_dorsal_to_foramen_magnum do_not_meet_in_a_suture,
+		24 67._Supracondylar_fossa_of_exoccipital /  absent 'distinct, but shallow, directly dorsal to condyle' deep_and_extending_across_entire_width_of_occipital_condyle 'reduced and located dorsomedial to condyle, or lost' 'polymorphic, 1&2 present',
+		25 70._Dorsolateral_border_of_exoccipital /  'thin and sharp (< 0.5 cm thick)' 'Thicker, rounded, and more or less smooth (ca. 0.5-1.5 cm thick)' 'thickened with smoothly rounded posterior edge and (in adults) a flat lateral surface ca. 1-2.5 cm wide (which may overhang a deep supracondylar fossa if one is present), but not otherwise forming a posteriorly-overhanging flange' 'ca. 2.5 cm wide, but with sharp, overhanging flange' 'overhanging the posterior face of exoccipital as a thick, rugose flange ca. 2.5-3.5 cm wide in adults' 'greatly thickened, forming broad, rugose, overhanging flange >3.5 cm wide' 'polymorphic, 1&2 present',
+		26 72._Hypoglossal_foramen /  surrouded_by_bone 'open (forming a notch), or absent',
+		27 73._Postympanic_process_of_squamosal /  'distinctly projects anteroventrally (supporting a facet for insertion of sternomastoid m.) from the ventral squamosal border that intersects the paroccipital processes' 'less salient, ends nearly in line with the ventral squamosal border' elongated_directly_downwards,
+		28 74._Sigmoid_ridge_of_squamosal /  'absent (no ridge on surface of squamosal extends above bottom of mastoid foramen)' present_and_prominent weak_or_absent,
+		29 76._Cranial_portion_of_squamosal /  does_not_extend_to_temporal_crest extends_to_temporal_crest,
+		30 77._Processus_retroversus_of_squamosal /  absent 'present, moderately inflected' 'present, not inflected' 'present, strongly inflected',
+		31 81._Outline_of_zygomatic_process_of_squamosal /  'gradually tapered and pointed anteriorly, with triangular anterior cross-section' 'regularly or irregularly rounded anteriorly, with non-triangular, sometimes inflated cross-section',
+		32 82._External_auditory_meatus_of_squamosal /  'narrow and slitlike (anteroposterior breadth less than dorsoventral)' 'about as wide (anterodorsal-posteroventral) as high (posterodorsal-anteroventral)' 'very broad and shallow, wider anteroposteriorly than high',
+		33 84._Zygomatic_process_of_squamosal /  'medial side not swollen, appears relatively flat or concave and inclined inward dorsally' 'medial side markedly swollen, inclined inward ventrally or forming a vertical wall',
+		34 85._Ventral_extremity_of_jugal /  lies_posterior_to_orbit 'lies approximately under posterior edge of orbit, but forward of jugal''s postorbital process' lies_ventral_to_orbit,
+		35 87._Preorbital_process_of_jugal /  does_not_contact_premaxilla contacts_premaxilla,
+		36 88._Preorbital_process_of_jugal /  'relatively flat and thin (posteromedial-anterolateral breadth of portion lateral to maxillojugal suture > anteromedial-posterolateral thickness)' 'thick and robust (breadth ? thickness)',
+		37 89._Zygomatic_process_of_jugal /  as_long_as_or_longer_than_diameter_or_orbit shorter_than_diameter_of_orbit,
+		38 90._Ventral_rim_of_orbit /  'does not distinctively overhang lateral surface of jugal, where such a surface is present below the orbit' does_distinctly_overhang,
+		39 91._Lacrimal /  'with foramen (nasolacrimal canal)' 'without foramen, but still large' vestigial_or_absent,
+		40 93._Lacrimal /  does_not_contact_premaxilla contacts_lateral_surface_of_nasal_process_of_premaxilla inserted_between_frontal_and_posterior_end_of_nasal_process_of_premaxilla,
+		41 97._Posterior_border_of_palatine /  'not incised, merely shallowl concave' incised_or_deeply_indented 'very deeply incised, to as far forward as level of M1',
+		42 99._Anterior_border_of_palatine /  'extend to or anteriorly beyond the posterior edge of the zygomatic-orbital bridge' does_not_extend_so_far_forward,
+		43 101._Alisphenoid_canal /  present absent,
+		44 102._Pterygoid_fossa /  absent 'present, extending above level of roof of internal nares' 'reduced, confined to below or above roof of internal nares',
+		45 103._Foramen_ovale /  enclosed_by_bone opened_to_form_a_notch_or_incisure,
+		46 105._Sphenopalatine_region /  long_with_pterygoid_processes_not_enlarged 'short, with pterygoid process enlarged, thickened and downwardly projecting',
+		47 115._Periotic /  fused_to_alisphenoid 'not fused with any other skull bone, set in close fitting socket in squamosal, but contacting alisphenoid' not_in_contact_with_alisphenoid,
+		48 118._Mastoid_portion_of_periotic /  not_exposed_on_outside_of_skull exposed_only_via_fenestra_in_dorsal_occiput,
+		49 121._Mandibular_symphysis /  'dorsoventrally compressed, with transverse incisor rows' 'laterally compressed, long, with parallel incisor rows and a narrow masticating surface scarcely wider than the two rows of functional or nonfunctional tooth alveoli it bears' 'wider, with rows of alveoli separated by a concavity broader than one alveolus' 'broad, more or less rectangular, without functional alveoli' 'broad, with exception of abrubtly narrowed anterior part',
+		50 122._Ventral_border_of_horizontal_mandibular_ramus /  straight_or_only_slightly_concave 'moderately concave, sharply downturned anteriorly' moderately_and_evenly_concave strongly_concave,
+		51 123._Accesory_mental_foramina /  'present, in addition to and usually posterior to the large principal foramen' absent,
+		52 125._Posterior_border_of_mandible /  descends_ventrally_or_posteroventrally_from_condyle_without_marked_interruption_or_abrupt_change_in_direction 'bears a steplike process (processus angularis superior) below condyle' has_no_distinct_processus_angularis_superior_but_does_have_broadly_convex_outline_beginning_well_below_condyle,
+		53 126._Anterior_border_of_coronoid_process /  approximately_vetical extends_slightly_anterior_to_base_of_process extends_very_far_anterior_to_base,
+		54 127._Mandibular_dental_capsule /  completely_enclosed_by_bone_of_mandible exposed_posteroventrally absent,
+		55 128._Horizontal_ramus_of_mandible /  'slender (minimum dorsoventral height < 0.25 x length of mandible)' 'broad dorsoventrally (height ? 0.25 x length of mandible)',
+		56 129._Ventral_border_of_horizontal_ramus_of_mandible /  tangent_to_angle not_tangent_to_angle,
+		57 137._First_upper_incisor /  enamel_crown_distinct_from_root enamel_extends_entire_length_of_tusk,
+		58 139._First_upper_incisor /  present vestigial_or_absent,
+		59 140._Depth_of_I1_alveolus /  much_less_than_half_of_the_premaxillary_symphysis about_half_the_length_of_the_symphysis much_greater_than_half_the_length_of_the_symphysis,
+		60 141._Cross_section_of_I1_crown /  suboval_or_subelliptical 'lens-shaped, with sharp anterior and posterior edges' 'lozengue-shaped' broad_and_extremely_flattened_mediolaterally,
+		61 142._First_upper_incisor /  'with enamel on all sides, forming complete enamel crown' with_enamel_mainly_on_medial_side,
+		62 '143. Second and third upper incisors, first through third lower incisors' /  'present, at least in part' all_absent,
+		63 144._Canines /  'double-rooted' 'single-rooted' absent,
+		64 '145. Premolars 1-4' /  all_present 'some absent (anterior ones)' 'all absent (no permanent premolars)',
+		65 146._Permanent_premolar_5 /  present absent,
+		66 147._Molar_3 /  with_crown_longer_than_or_equal_to_that_of_M2 smaller_than_M2 with_reduced_circular_crown 'no molar identifiable as M3, all molars subequal',
+		67 150._Supernumerary_molars /  absent present_and_replenished_indefinitely_by_horizontal_replacement,
+		68 151._Cheek_teeth /  present_in_adult present_in_juvenile_only absent,
+		69 155._Postcanine_dental_formula /  'P4, M3' 'P5, M3, or inferred to be secontarily reduced by loss of premolars',
+		70 157._Permanent_premolars /  'some double- or triple-rooted' 'all single-rooted' all_absent,
+		71 200._Cervical_vertebrae /  7_in_number 6_in_number,
+		72 '203. Tips of thoracic, lumbar and sacral neural spines' /  Do_not_bear_pronounced_transverse_flanges Do_bear_pronounce_transverse_flanges,
+		73 204._Lumbar_vertebrae /  4_in_number 3_in_number,
+		74 205._Sacrum /  Includes_more_than_one_vertebra Includes_only_one_vertebra No_vertebra_is_identifiable_as_a_sacral_by_having_a_distinct_attachment_to_the_innominate_bone,
+		75 206._Anterior_caudal_vertebrae /  'Transverse process small, pierced dorsoventrally by a foramen' 'Transverse process elongate, not pierced by a foramen',
+		76 207._Posterior_caudal_vertebrae /  Taper_continuously_in_breadth_posterad 'Show transverse narrowing in peduncle region, then broadening (indicative of the presence of flukes) then tapering to tip of tail',
+		77 213._Bicipital_groove_of_humerus /  'Large, tubercles well separated' 'Small, tubercles largely united' 'Vestigial or absent, tubercles completely united',
+		78 215._Pubis /  'Arclike, symphysis present' 'Pronglike, symphysis present but very short' 'Pronglike or indistinct, symphysis absent',
+		79 217._Femur /  Present Reduced_or_absent,
+		80 218._Third_trochanter_of_femur /  Present Absent,
+		81 220._Tibia /  Present Absent,
+		82 221._Humerus /  Slender Robust,
+		83 222._Deltoid_process_of_humerus /  Low_blunt_rugosity 'Prominent, sharply recurved and pointed' Reduced_or_lost ; 
+	MATRIX
+	Proboscidea                     00000010000??10000000?0000??00?0?00000?00000000000000?0000000000100000?????????????
+	'Cornwallius sookensis_Desmo'   00000000000?0100000000100?10000?0000001000?00000000?0000?000?011100000??????????0??
+	Prorastomus_sirenoides          100111100?01000000000000001100000000?0000001000110000000?000?000000010?????????????
+	Pezosiren_portelli              1001111?0??1??0000000000000000010????????00?0?1?1101?000001000100000100100000000011
+	Sobrarbesiren_cardieli          20?111100001000000001?0?1?01110000000000?00111?1????????00010010000011?0?0??0000?1?
+	Protosiren_smithae              10011100000100100000101110120010000000??000011?121111101?020?01000001100?1??0101000
+	Eotheriodes_aegyptiacum         ?001110?0001?00000001001100111000?0???000?111?11110???0??????010100011?????????????
+	Prototherium_ausetanum          1001110??0??00?0?00011011?0?110?00?0000?001111????????????????10100011?????????????
+	Eosiren_libyca                  20011?0?00???000000010021??111?10000001??01?1?1??1011100000??010100011?????????????
+	#Halitherium_taulannense         200111?100010000000010021001110100000001101111111102110000100010100011?0????0211?0?
+	Anomotherium_langewieschei      ??????????????0000001?021?0110?20?????????1111113112?100?????1211?0011?????????????
+	Miosiren_kocki                  100111010101000100001102102110020200002000111111????????10200121120011001??????????
+	Potamosiren_madgalenensis       ??????1?00??????????????????????????????????????320??100?????122100012?????????????
+	Ribodon_limbatus                ??????1?010?0???????????????????????????????????320?110??????122131012?????????????
+	Trichechus_hesperamazonicus     ??????1?01???1??????????????????????????11????????022??0?1?????2?310?2?????????????
+	#Trichechus_manatus_latirostris  10011111010101100000110011011012100000201111111132022101?10??1221310121012102211112
+	#Trichechus_senegalensis         10011111010101100000110011011012100000201111111132022101?10??1221310121012102211112
+	Trichechus_inunguis             10011111010101100000110131011012100000201111111132022100?10??1221310121012102211112
+	Kaupitherium_spp                200111(0 1)10001000000001002100111010100000(0 1)101111111102110100100121100011001111?211101
+	Lentiarenium_cristolii          ?0?1??0?0001??1000001002?00111010?????????1111?133021111?????121100011?0????0??????
+	Priscosiren_atlantica           20011101000100100000100200011101020000111011111133121111?000?122100012?0111????????
+	Caribosiren_turneri             200111010001001000001?????0111010?000?1110111111?????????10??122100012?????????????
+	Metaxytherium_krahuletzi        20011111000100110000110220011101010000111011111143121111000001221000120011??0211111
+	Metaxytherium_albifontanum      20011111000100110000111220011101010000111011111143?21111000001221000120011110211111
+	Metaxytherium_floridanum        20011111000100110000111220011101020000111011111143121111000001221000120011110211111
+	Metaxytherium_serresii          20011111000100110000111320011101020000111111111143121111001001221000120011??0211111
+	Metaxytherium_arctodites        20011101000110110000111220011101020000112011111143121111000001221000120011110211111
+	Dusisiren_reinharti             ?001?11?00011??100001114600111010?????????11111132?21????10??122100012?0????0????11
+	Dusisiren_jordani               20011111000130110000111340011201021000201011111132121101?10??1221000120011??0211111
+	Hydrodamalis_cuestae            20011112100121110000111340021201021000201011111132121101?10??1221?0112?????????????
+	Hydrodamalis_gigas              20011112100101120000111350021201021000201011111132120201?10??1221?02120011110211111
+	Crenatosiren_olseni             2001110100010011100010021001110101000111?0111111431211110010012210001200111?0?11101
+	Nanosiren_spp                   2011?10?1001001?11?111121101130101?001???01211214312111100000122100012?0????0????01
+	Dugong_dugon                    20011102110100112111111210011301021101121011111143121111102011221000120011110111111
+	Corystosiren_varguezi           231111?????1?01321011?011?011?0?0201001??????111????????10231122100012?????????????
+	Callistosiren_boriquensis       220111010001001012001002100111010201001210111111????????10221122100012?0111????????
+	Kutchisiren_cylindrica          22011101000100111200110??0?111?10201?11020121111430??11?10221122100012?????????????
+	Rytiodus_heali                  24012102000100111200101?10??110?020101122011?111?31?111?10231122100012?????????????
+	Rytiodus_capgrandi              ?1111??10??1??1112101?0?1??1110?020?01?????????1????????10231122100012?????????????
+	Bharatisiren_indica             2101110100010013101010020001110102011112201111?1???211???020?122100012?????????????
+	Bharatisiren_kachchhensis       2201120100110010121011020?011?0102010112201111?1????????1020?122100012?????????????
+	Domningia_sodhae                2301110100010013120010021?01111102010111201211?143121?11?021?122100012?????????????
+	Dioplotherium_manigaulti        23011101001100131201100220??1???0201111120121111????????10220122100012?????????????
+	Xenosiren_yucateca              ?3?1????2111??1312011????????11?02?111??????????????????10?3112?100012?????????????
+	Culebratherium_alemani          23111202000100131210100230011101020101111011?1?143021?0110221122100012?????????????
+	Dioplotherium_allisoni          230112020??100131110100?2001110102011111101211?14302111110221122100012??????0?????1
+
+;
+
+END;
+BEGIN LABELS;
+	CHARGROUPLABEL Skull COLOR = (RGB 0.6 0.6 1) ;
+	CHARGROUPLABEL Mandible COLOR = (RGB 1 0.45882353 0.10196078) ;
+	CHARGROUPLABEL Dental COLOR = (RGB 0.33333333 1 0.46666667) ;
+	CHARGROUPLABEL Postcranium COLOR = (RGB 0.23529412 0.54117647 1) ;
+
+
+END;
+
+BEGIN SETS;
+	CHARPARTITION * UNTITLED  =  Skull :  1- 48, Mandible :  49- 56, Dental :  57- 70, Postcranium :  71- 83;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 83;
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 83;
+
+	WTSET * UNTITLED  =  1: 1 -  83 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Velez-Juarbe & Wood-SupplementaryR1-update Aug 11 2020 copy 3-MPTs.nex"';
+	ID 01747d83f2a426;
+	LINK Taxa = WAC_sirenia;
+	TRANSLATE
+[0] 		1 Proboscidea,
+[1] 		2 'Cornwallius sookensis_Desmo',
+[2] 		3 Prorastomus_sirenoides,
+[3] 		4 Pezosiren_portelli,
+[4] 		5 Sobrarbesiren_cardieli,
+[5] 		6 Protosiren_smithae,
+[6] 		7 Eotheriodes_aegyptiacum,
+[7] 		8 Prototherium_ausetanum,
+[8] 		9 Eosiren_libyca,
+[9] 		10 Halitherium_taulannense,
+[10] 		11 Anomotherium_langewieschei,
+[11] 		12 Miosiren_kocki,
+[12] 		13 Potamosiren_madgalenensis,
+[13] 		14 Ribodon_limbatus,
+[14] 		15 Trichechus_hesperamazonicus,
+[15] 		16 Trichechus_manatus_latirostris,
+[16] 		17 Trichechus_senegalensis,
+[17] 		18 Trichechus_inunguis,
+[18] 		19 Kaupitherium_spp,
+[19] 		20 Lentiarenium_cristolii,
+[20] 		21 Priscosiren_atlantica,
+[21] 		22 Caribosiren_turneri,
+[22] 		23 Metaxytherium_krahuletzi,
+[23] 		24 Metaxytherium_albifontanum,
+[24] 		25 Metaxytherium_floridanum,
+[25] 		26 Metaxytherium_serresii,
+[26] 		27 Metaxytherium_arctodites,
+[27] 		28 Dusisiren_reinharti,
+[28] 		29 Dusisiren_jordani,
+[29] 		30 Hydrodamalis_cuestae,
+[30] 		31 Hydrodamalis_gigas,
+[31] 		32 Crenatosiren_olseni,
+[32] 		33 Nanosiren_spp,
+[33] 		34 Dugong_dugon,
+[34] 		35 Corystosiren_varguezi,
+[35] 		36 Callistosiren_boriquensis,
+[36] 		37 Kutchisiren_cylindrica,
+[37] 		38 Rytiodus_heali,
+[38] 		39 Rytiodus_capgrandi,
+[39] 		40 Bharatisiren_indica,
+[40] 		41 Bharatisiren_kachchhensis,
+[41] 		42 Domningia_sodhae,
+[42] 		43 Dioplotherium_manigaulti,
+[43] 		44 Xenosiren_yucateca,
+[44] 		45 Culebratherium_alemani,
+[45] 		46 Dioplotherium_allisoni;
+	TREE 'PAUP_1+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_2+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_3+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_4+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_5+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_6+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_7+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_8+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_9+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_10+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_11+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_12+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_13+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_14+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_15+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_16+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_17+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_18+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_19+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_20+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_21+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_22+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_23+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_24+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_25+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_26+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_27+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_28+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_29+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_30+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_31+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_32+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_33+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_34+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_35+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_36+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_37+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_38+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_39+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_40+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_41+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_42+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_43+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_44+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_45+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_46+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_47+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_48+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_49+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_50+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_51+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_52+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,((15,18),(16,17))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_53+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_54+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_55+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_56+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_57+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_58+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_59+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_60+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_61+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_62+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_63+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))),8))))));
+	TREE 'PAUP_64+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_65+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_66+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_67+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_68+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_69+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_70+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_71+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_72+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_73+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_74+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_75+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_76+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_77+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_78+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_79+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_80+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_81+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_82+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_83+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_84+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_85+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_86+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_87+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_88+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_89+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_90+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_91+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_92+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_93+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_94+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_95+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_96+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_97+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_98+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_99+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_100+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_101+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_102+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_103+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_104+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_105+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_106+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_107+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))),8))))));
+	TREE 'PAUP_108+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_109+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_110+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_111+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_112+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_113+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_114+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_115+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_116+' = (1,2,(3,(4,(5,(6,((7,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_117+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,((15,18),(16,17)))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_118+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_119+' = (1,2,(3,(4,(5,(6,((7,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))),8))))));
+	TREE 'PAUP_120+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,((15,18),(16,17))))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_121+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,(15,((16,17),18))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_122+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,12),(13,(14,((15,(16,17)),18)))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_123+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_124+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_125+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_126+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))))));
+	TREE 'PAUP_127+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_128+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_129+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_130+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,(21,(22,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_131+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_132+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_133+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_134+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_135+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_136+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_137+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_138+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_139+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_140+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_141+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_142+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_143+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_144+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_145+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_146+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,((42,(43,44)),(45,46))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_147+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_148+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_149+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_150+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22)))))))))))));
+	TREE 'PAUP_151+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_152+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_153+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_154+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,((21,((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))),22))))))))))));
+	TREE 'PAUP_155+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_156+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_157+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_158+' = (1,2,(3,(4,(5,(6,(7,(8,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41))))))))))))))))))))));
+	TREE 'PAUP_159+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,(15,((16,17),18)))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_160+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,(12,(13,(14,((15,(16,17)),18))))),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_161+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,(15,((16,17),18))))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))));
+	TREE 'PAUP_162+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,(((11,(13,(14,((15,(16,17)),18)))),12),(19,(20,((21,22),((23,(24,(25,(26,(28,(29,(30,31)))),27))),(32,(33,((34,35),(36,((37,(42,((43,44),(45,46)))),(38,(39,(40,41)))))))))))))))))))));
+
+END;
+
+
+BEGIN TREES[!'Parameters: Strict Consensus of trees from Stored Trees'];
+	Title Consensus_Tree;
+	ID 01747d84387727;
+	LINK Taxa = WAC_sirenia;
+	TRANSLATE
+[0] 		1 Proboscidea,
+[1] 		2 'Cornwallius sookensis_Desmo',
+[2] 		3 Prorastomus_sirenoides,
+[3] 		4 Pezosiren_portelli,
+[4] 		5 Sobrarbesiren_cardieli,
+[5] 		6 Protosiren_smithae,
+[6] 		7 Eotheriodes_aegyptiacum,
+[7] 		8 Prototherium_ausetanum,
+[8] 		9 Eosiren_libyca,
+[9] 		10 Halitherium_taulannense,
+[10] 		11 Anomotherium_langewieschei,
+[11] 		12 Miosiren_kocki,
+[12] 		13 Potamosiren_madgalenensis,
+[13] 		14 Ribodon_limbatus,
+[14] 		15 Trichechus_hesperamazonicus,
+[15] 		16 Trichechus_manatus_latirostris,
+[16] 		17 Trichechus_senegalensis,
+[17] 		18 Trichechus_inunguis,
+[18] 		19 Kaupitherium_spp,
+[19] 		20 Lentiarenium_cristolii,
+[20] 		21 Priscosiren_atlantica,
+[21] 		22 Caribosiren_turneri,
+[22] 		23 Metaxytherium_krahuletzi,
+[23] 		24 Metaxytherium_albifontanum,
+[24] 		25 Metaxytherium_floridanum,
+[25] 		26 Metaxytherium_serresii,
+[26] 		27 Metaxytherium_arctodites,
+[27] 		28 Dusisiren_reinharti,
+[28] 		29 Dusisiren_jordani,
+[29] 		30 Hydrodamalis_cuestae,
+[30] 		31 Hydrodamalis_gigas,
+[31] 		32 Crenatosiren_olseni,
+[32] 		33 Nanosiren_spp,
+[33] 		34 Dugong_dugon,
+[34] 		35 Corystosiren_varguezi,
+[35] 		36 Callistosiren_boriquensis,
+[36] 		37 Kutchisiren_cylindrica,
+[37] 		38 Rytiodus_heali,
+[38] 		39 Rytiodus_capgrandi,
+[39] 		40 Bharatisiren_indica,
+[40] 		41 Bharatisiren_kachchhensis,
+[41] 		42 Domningia_sodhae,
+[42] 		43 Dioplotherium_manigaulti,
+[43] 		44 Xenosiren_yucateca,
+[44] 		45 Culebratherium_alemani,
+[45] 		46 Dioplotherium_allisoni;
+	TREE 'Strict Consensus of 162 trees from Trees stored in block "Trees from "Velez-Juarbe & Wood-SupplementaryR1-update Aug 11 2020 copy 3-MPTs.nex""+' = (1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,12,(13,(14,(15,18,(16,17))))),(19,(20,(21,22,((23,(24,(25,27,(26,(28,(29,(30,31))))))),(32,(33,((34,35),(36,((38,(39,(40,41))),(37,(42,(43,44),(45,46)))))))))))))))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	SU  C = 1 N = color I = 0;
+
+	SU  C = 2 N = color I = 5;
+	SU  T = 3 C = 2 N = color I = 5;
+	SU  T = 32 C = 2 N = color I = 5;
+	SU  T = 33 C = 2 N = color I = 5;
+	SU  T = 34 C = 2 N = color I = 5;
+	SU  T = 35 C = 2 N = color I = 5;
+	SU  T = 37 C = 2 N = color I = 5;
+	SU  T = 38 C = 2 N = color I = 5;
+	SU  T = 41 C = 2 N = color I = 5;
+	SU  T = 42 C = 2 N = color I = 5;
+	SU  T = 43 C = 2 N = color I = 5;
+	SU  T = 44 C = 2 N = color I = 5;
+	SU  T = 46 C = 2 N = color I = 5;
+
+	SU  C = 4 N = color I = 0;
+
+	SU  C = 5 N = color I = 0;
+
+	SU  C = 13 N = color I = 0;
+
+	SU  T = 41 C = 17 N = color I = 5;
+
+	SU  C = 22 N = color I = 0;
+
+	SU  C = 43 N = color I = 0;
+
+	SU  C = 45 N = color I = 0;
+
+	SU  C = 46 N = color I = 0;
+
+	SU  C = 58 N = color I = 0;
+
+	SU  C = 66 N = color I = 0;
+
+	AN C = 2  A = 0 DC = 2009.11.12.15.34.49 DM = 2009.11.12.15.35.37 ID = 0124eabfcf9d5 I = _ TF = (CM Ch._6_of_Domning.) ;
+
+	AN C = 3  A = 0 DC = 2009.11.12.15.35.16 DM = 2009.11.12.15.35.32 ID = 0124eac039b86 I = _ TF = (CM Ch._7_of_Domning.) ;
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1613785261231;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 518623758958089816;
+			tell It;
+				setDefaultOrder  0 3 213 8 4 12 106 26 28 127 46 95 15 16 13 17 18 19 29 36 80 88 127 127 128 129 130 46 87 86 50 163 167 163 148 56 152 142 107 92 150 151 154 148 71 154;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 8971980870935082480;
+			tell It;
+				setDefaultOrder  0 2 19 3 4 61 6 7 95 98 116 11 19 13 14 138 151 151 152 153 20 92 153 23 24 153 26 27 28 156 31 32 33 37 35 153 154 45 39 40 153 42 104 154 106 107 47 50 48 154 155 156 53 54 156 157 158 114 159 160 161 162 163 64 65 119 67 68 69 165 70 71 72 73 74 75 76 77 78 79 80 81 82;
+				attachments ;
+			endTell;
+			mqVersion 361;
+			checksumv 0 3 3572195264 null  getNumChars 83 numChars 83 getNumTaxa 46 numTaxa 46   short true   bits 127   states 127   sumSquaresStatesOnly 24252.0 sumSquares 24252.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 176;
+			setPopoutState 297;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1407 686;
+			setLocation 10 46;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #518623758958089816 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #518623758958089816;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					newAssistant  #mesquite.lists.DefaultTaxaOrder.DefaultTaxaOrder;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1231 614;
+					setLocation 10 46;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.TaxonList.TaxonListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #518623758958089816  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 2;
+					setTreeBlockID 01747d84387727;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 5513.1599833655920.4973519369947474790;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1231 614;
+					setLocation 10 46;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientUp;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.ColorTaxonByAssigned.ColorTaxonByAssigned;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(1,2,(3,(4,(5,(6,(7,8,(9,(10,((11,12,(13,(14,(15,18,(16,17))))),(19,(20,(21,22,((23,(24,(25,27,(26,(28,(29,(30,31))))))),(32,(33,((34,35),(36,((38,(39,(40,41))),(37,(42,(43,44),(45,46)))))))))))))))))))));';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					getInfoPanel;
+					tell It;
+						btspOpen true;
+						apOpen false;
+					endTell;
+					toggleInfoPanel on;
+					togglePrintName on;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					newValue  #mesquite.trees.TreeValueUsingMatrix.TreeValueUsingMatrix;
+					tell It;
+						getEmployee #mesquite.parsimony.TreelengthForMatrix.TreelengthForMatrix;
+						tell It;
+							getEmployee #mesquite.parsimony.ParsCharSteps.ParsCharSteps;
+							tell It;
+								setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							endTell;
+						endTell;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #8971980870935082480;
+							endTell;
+						endTell;
+					endTell;
+					newValue  #mesquite.trees.TreeValueUsingMatrix.TreeValueUsingMatrix;
+					tell It;
+						getEmployee #mesquite.parsimony.TreelengthForMatrix.TreelengthForMatrix;
+						tell It;
+							getEmployee #mesquite.parsimony.ParsCharSteps.ParsCharSteps;
+							tell It;
+								setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							endTell;
+						endTell;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #8971980870935082480;
+							endTell;
+						endTell;
+					endTell;
+					newValue  #mesquite.trees.TreeValueUsingMatrix.TreeValueUsingMatrix;
+					tell It;
+						getEmployee #mesquite.parsimony.TreelengthForMatrix.TreelengthForMatrix;
+						tell It;
+							getEmployee #mesquite.parsimony.ParsCharSteps.ParsCharSteps;
+							tell It;
+								setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							endTell;
+						endTell;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #8971980870935082480;
+							endTell;
+						endTell;
+					endTell;
+					panelOpen true;
+				endTell;
+			endTell;
+			makeTreeWindow #518623758958089816  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 01747d83f2a426;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1090.1613785238073.2893714481704587161;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1231 614;
+					setLocation 10 46;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #8971980870935082480 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 152;
+					endTell;
+					setExplanationSize 50;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1231 594;
+					setLocation 10 46;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames off;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 358;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1231 614;
+						setLocation 10 46;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar off;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #8971980870935082480 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.stochchar.CharListProbModels.CharListProbModels;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					newAssistant  #mesquite.lists.CharacterStats.CharacterStats;
+				tell It;
+					toggleSelectedOnly off;
+				endTell;
+					newAssistant  #mesquite.lists.CharListWeights.CharListWeights;
+					getTable;
+					tell It;
+						columnWidth 0 86;
+						columnWidth 1 75;
+						columnWidth 2 69;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1231 614;
+					setLocation 10 46;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.arrow;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
