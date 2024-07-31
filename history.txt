@@ -1,0 +1,3 @@
+setwd("C:/Users/vicit/OneDrive/Dokumente/Master/2ndSemester/Phylogenetics/Project/Sirenia/scripts")
+setwd("C:/Users/vicit/OneDrive/Dokumente/Master/2ndSemester/Phylogenetics/Project/Sirenia")
+source("scripts/main.Rev")

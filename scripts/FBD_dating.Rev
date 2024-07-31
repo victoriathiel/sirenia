@@ -14,7 +14,7 @@ diversification := speciation_rate - extinction_rate
 turnover := extinction_rate/speciation_rate
 
 # extant species sampling
-rho <- 1.0
+rho <- 0.12
 
 # prior and move on the origin
 origin_time ~ dnUnif(59.2, 100.0)
